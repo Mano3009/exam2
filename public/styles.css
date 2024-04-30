@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0000; /* Red color */
+    color: #fff; /* White text color for better contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.container form {
+    margin-bottom: 10px;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container li {
+    margin-bottom: 5px;
+}
