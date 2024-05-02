@@ -21,10 +21,10 @@ jobs:
           password: OCgBopk2sXyeT60DPfsv+nP9/y62XBZ2XPIck9yB6g+ACRDIy/np
 
       - name: Build Docker image
-        run: docker build -t todoimage1 .
+        run: docker build -t todoimage2 .
 
       - name: Push Docker image to Azure Container Registry
-        run: docker push toimage1
+        run: docker push toimage2
 
       - name: Login to Azure
         uses: azure/login@v1
@@ -32,4 +32,4 @@ jobs:
           creds: ${{ secrets.todolist }}
 
       - name: Deploy to Azure App Service
-        run: az webapp create --resource-group todo1 --plan ASP-todo1-ad44 (F1: 1) --name to-dolist --deployment-container-image-name image
+        run: az webapp create --resource-group todo1 --plan ASP-todo1-ad44  --name to-dolist --deployment-container-image-name image
