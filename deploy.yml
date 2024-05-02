@@ -32,4 +32,4 @@ jobs:
           creds: ${{ secrets.todolist }}
 
       - name: Deploy to Azure App Service
-        run: az webapp create --resource-group todo1 --plan ASP-todo1-ad44  --name to-dolist --deployment-container-image-name image
+        run: az webapp create --resource-group todo1 --plan ASP-todo1-ad44  --name to-dolist --deployment-container-image-name todoimage2
