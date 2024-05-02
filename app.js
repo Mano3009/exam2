@@ -24,6 +24,11 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
+// Health Check endpoint
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'OK' });
+});
+
 // Routes
 app.get('/', (req, res) => {
   db.all('SELECT * FROM todos', (err, rows) => {
